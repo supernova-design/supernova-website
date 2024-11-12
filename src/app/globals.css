@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000;
+  --foreground: #fff;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-grid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 32 32'%3E%3Cpath fill='%23191919' d='M3 0h12v2H3V0ZM19 0h12v2H19V0ZM3 16h12v2H3v-2ZM19 16h12v2H19v-2ZM18 3v12h-2V3h2ZM18 19v12h-2V19h2ZM2 3v12H0V3h2ZM2 19v12H0V19h2ZM12.5 14 4 5.5V4h1.5l8.5 8.5V14h-1.5ZM30 5.5 21.5 14H20v-1.5L28.5 4H30v1.5ZM28.5 30 20 21.5V20h1.5l8.5 8.5V30h-1.5ZM4 28.5l8.5-8.5H14v1.5L5.5 30H4v-1.5Z'/%3E%3C/svg%3E");
+  background-size: 4rem;
 }
